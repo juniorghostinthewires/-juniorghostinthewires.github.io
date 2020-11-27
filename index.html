@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Projeto RFIDSUS - Tecnologia e saúde para todos!</title>
+</head>
+<body>
+  <link rel="stylesheet" type="text/css"  href="estilo.css" />
+<font face="Helvetica" color="007FFF" align="center" size="5px">
+<h1 align="center"> Bem-vindo ao Projeto RFIDSUS!</h1>
+ </font>
+ <font face="Helvetica" color="white" align="center" size="4px">
+ <h2 align="center"> Novo por aqui? Cadastre-se no SUS do futuro!</h2><br/>
+ </font>
+
+<div>
+  <img src="foda.png" alt="muie" align="right" height="270px">
+</div>
+<form action="Script_do_Formulario.php" method="post">
+<font  face="Helvetica" color="white" align="left" size="4px">
+<!-- DADOS PESSOAIS-->
+<fieldset>
+<font face="Helvetica" color="007FFF" align="left" size="6,5px">
+ <legend>Dados Pessoais</legend>
+ </font>
+ <table cellspacing="10" bgcolor=>
+  <tr>
+   <td><label for="nome">Nome: </label></td>
+<td align="left"> <input type="text" name="email"></td> </tr>
+<tr>
+   <td> <label for="numerosus">Número Cartão SUS</label><td align="left"> <input type="text" name="email"></td>
+   </tr>
+   <tr>
+   <td> <label for="datanascimento">Data de Nascimento:</label>
+   <td align="left">
+   <input type="text" name="dia" size="2" maxlength="2" value="dd">
+   <input type="text" name="mes" size="2" maxlength="2" value="mm">
+   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+   </td>
+
+  </tr>
+  <tr>
+   <td>
+    <label for="rg">RG: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="rg" size="13" maxlength="13">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>CPF:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="cpf" size="9" maxlength="8"> - <input type="text" name="cpf2" size="1" maxlength="2">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+
+<br />
+<!-- ENDEREÇO -->
+<fieldset>
+<font face="Helvetica" color="007FFF" align="left" size="6,5px">
+ <legend>Dados de Endereço</legend>
+ </font>
+ <table cellspacing="10">
+
+  <tr>
+   <td>
+    <label for="rua">Rua:</label>
+   </td>
+   <td>
+    <input type="text" name="rua">
+   </td>
+   <td>
+    <label for="numero">Número:</label> <td> <input type="text" name="numero" size="1"> </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="bairro">Bairro: </label>
+   </td>
+   <td>
+    <input type="text" name="bairro">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="estado">Estado:</label>
+   </td>
+   <td align="left">
+    <select name="estado">
+    <option value="ac">Acre</option>
+    <option value="al">Alagoas</option>
+    <option value="am">Amazonas</option>
+    <option value="ap">Amapá</option>
+    <option value="ba">Bahia</option>
+    <option value="ce">Ceará</option>
+    <option value="df">Distrito Federal</option>
+    <option value="es">Espírito Santo</option>
+    <option value="go">Goiás</option>
+    <option value="ma">Maranhão</option>
+    <option value="mt">Mato Grosso</option>
+    <option value="ms">Mato Grosso do Sul</option>
+    <option value="mg">Minas Gerais</option>
+    <option value="pa">Pará</option>
+    <option value="pb">Paraíba</option>
+    <option value="pr">Paraná</option>
+    <option value="pe">Pernambuco</option>
+    <option value="pi">Piauí</option>
+    <option value="rj">Rio de Janeiro</option>
+    <option value="rn">Rio Grande do Norte</option>
+    <option value="ro">Rondônia</option>
+    <option value="rs">Rio Grande do Sul</option>
+    <option value="rr">Roraima</option>
+    <option value="sc">Santa Catarina</option>
+    <option value="se">Sergipe</option>
+    <option value="sp">São Paulo</option>
+    <option value="to">Tocantins</option>
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cidade">Cidade: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cidade">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cep">CEP: </label>
+   </td>
+   <td>
+    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br/>
+</fieldset>
+<!-- DADOS DE LOGIN -->
+<fieldset>
+<font face="Helvetica" color="007FFF" align="center" size="5px">
+ <legend>O Número do seu cartão RFID é:</legend>
+ </font>
+ <div style="margin-top: 30px;" align="center" class="container">
+ <label>
+<input type="text" name="idcartao" size="50" maxlength="10" value="Número específico">
+</label>
+</div>
+</fieldset>
+<br/>
+<div align="center">
+<input type="submit" value="Enviar" size="10" maxlength="10">
+<input type="reset" value="Limpar" size="10" maxlength="10">
+</div>
+</font>
+</form>
+ </body>
+</html>
